@@ -20,7 +20,8 @@
         <activity android:name=".MyOptions" />
         <activity android:name=".PlacesToVisit" />
         <activity android:name=".Hotels" />
-        <activity android:name=".Restaurants"></activity>
+        <activity android:name=".Restaurants" />
+        <activity android:name=".CommonDisplayActivity"></activity>
     </application>
 
 </manifest>

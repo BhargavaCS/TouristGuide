@@ -17,8 +17,9 @@ public class MyOptions extends AppCompatActivity {
     {
         Intent intent=getIntent();
         String place=intent.getStringExtra("Place");
-        Intent new_intent=new Intent(this,PlacesToVisit.class);
+        Intent new_intent=new Intent(this,CommonDisplayActivity.class);
         new_intent.putExtra("Place",place);
+        new_intent.putExtra("Clicked","places");
         startActivity(new_intent);
     }
 
@@ -26,8 +27,9 @@ public class MyOptions extends AppCompatActivity {
     {
         Intent intent=getIntent();
         String place=intent.getStringExtra("Place");
-        Intent new_intent=new Intent(this,Hotels.class);
+        Intent new_intent=new Intent(this,CommonDisplayActivity.class);
         new_intent.putExtra("Place",place);
+        new_intent.putExtra("Clicked","Hotels");
         startActivity(new_intent);
     }
 
@@ -35,8 +37,40 @@ public class MyOptions extends AppCompatActivity {
     {
         Intent intent=getIntent();
         String place=intent.getStringExtra("Place");
-        Intent new_intent=new Intent(this,Restaurants.class);
+        Intent new_intent=new Intent(this,CommonDisplayActivity.class);
         new_intent.putExtra("Place",place);
+        new_intent.putExtra("Clicked","Restaurants");
         startActivity(new_intent);
     }
+
+    public void Temples(View view)
+    {
+        Intent intent=getIntent();
+        String place=intent.getStringExtra("Place");
+        Intent new_intent=new Intent(this,CommonDisplayActivity.class);
+        new_intent.putExtra("Place",place);
+        new_intent.putExtra("Clicked","Temples");
+        startActivity(new_intent);
+    }
+
+    public void Hospitals(View view)
+    {
+        Intent intent=getIntent();
+        String place=intent.getStringExtra("Place");
+        Intent new_intent=new Intent(this,CommonDisplayActivity.class);
+        new_intent.putExtra("Place",place);
+        new_intent.putExtra("Clicked","Hospitals");
+        startActivity(new_intent);
+    }
+
+    public void ITCompanies(View view)
+    {
+        Intent intent=getIntent();
+        String place=intent.getStringExtra("Place");
+        Intent new_intent=new Intent(this,CommonDisplayActivity.class);
+        new_intent.putExtra("Place",place);
+        new_intent.putExtra("Clicked","ITCompanies");
+        startActivity(new_intent);
+    }
+
 }
